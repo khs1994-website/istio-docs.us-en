@@ -118,6 +118,8 @@
       * [Virtual Machine Architecture](ops/deployment/vm-architecture/index.md)
     * [Deployment](ops/deployment/_index.md)
   - Diagnostic Tools
+    - Cni
+      * [Troubleshooting The Istio CNI Plugin](ops/diagnostic-tools/cni/index.md)
     - Component Logging
       * [Component Logging](ops/diagnostic-tools/component-logging/index.md)
     - Controlz
