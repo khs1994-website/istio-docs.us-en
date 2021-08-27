@@ -499,9 +499,7 @@
       - Egress Gateway
         * [Egress Gateways](tasks/traffic-management/egress/egress-gateway/index.md)
       - Egress Gateway Tls Origination
-        * [Egress Gateways With TLS Origination File Mount](tasks/traffic-management/egress/egress-gateway-tls-origination/index.md)
-      - Egress Gateway Tls Origination Sds
-        * [Egress Gateways With TLS Origination SDS](tasks/traffic-management/egress/egress-gateway-tls-origination-sds/index.md)
+        * [Egress Gateways With TLS Origination](tasks/traffic-management/egress/egress-gateway-tls-origination/index.md)
       - Egress Kubernetes Services
         * [Kubernetes Services For Egress Traffic](tasks/traffic-management/egress/egress-kubernetes-services/index.md)
       - Egress Tls Origination
