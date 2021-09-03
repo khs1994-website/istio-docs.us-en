@@ -421,7 +421,11 @@
   - Observability
     - Distributed Tracing
       - Configurability
-        * [Configurability](tasks/observability/distributed-tracing/configurability/index.md)
+        - Mesh And Proxy Config
+          * [Configure Tracing Using Mesh Config And Pod Annotations](tasks/observability/distributed-tracing/configurability/mesh-and-proxy-config/index.md)
+        - Telemetry Api
+          * [Configuring Tracing Using The Telemetry API](tasks/observability/distributed-tracing/configurability/telemetry-api/index.md)
+        * [Configuration](tasks/observability/distributed-tracing/configurability/_index.md)
       - Jaeger
         * [Jaeger](tasks/observability/distributed-tracing/jaeger/index.md)
       - Lightstep
