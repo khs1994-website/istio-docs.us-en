@@ -14,7 +14,7 @@ This page describes the built-in configuration profiles that can be used when
 The profiles provide customization of the Istio control plane and of the sidecars for the Istio data plane.
 
 You can start with one of Istio’s built-in configuration profiles and then further
-[customize the configuration](/docs/setup/install/istioctl/#customizing-the-configuration)
+[customize the configuration](/docs/setup/additional-setup/customize-installation/)
 for your specific needs. The following built-in configuration profiles are currently available:
 
 1. **default**: enables components according to the default settings of the
@@ -33,7 +33,7 @@ for your specific needs. The following built-in configuration profiles are curre
     {{< /warning >}}
 
 1. **minimal**: same as the default profile, but only the control plane components are installed.
-    This allows you to configure the control plane and data plane components (e.g., gateways) using [separate profiles](/docs/setup/upgrade/gateways/#installation-with-istioctl).
+    This allows you to configure the control plane and data plane components (e.g., gateways) using [separate profiles](/docs/setup/additional-setup/gateway/#deploying-a-gateway).
 
 1. **external**: used for configuring a {{< gloss >}}remote cluster{{< /gloss >}} that is managed by an
     {{< gloss >}}external control plane{{< /gloss >}} or by a control plane in a {{< gloss >}}primary cluster{{< /gloss >}}

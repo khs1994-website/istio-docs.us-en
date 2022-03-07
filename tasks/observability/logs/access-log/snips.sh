@@ -22,7 +22,19 @@
 source "content/en/boilerplates/snips/before-you-begin-egress.sh"
 source "content/en/boilerplates/snips/start-httpbin-service.sh"
 
-! read -r -d '' snip_enable_envoys_access_logging_1 <<\ENDSNIP
+! read -r -d '' snip_using_telemetry_api_1 <<\ENDSNIP
+apiVersion: telemetry.istio.io/v1alpha1
+kind: Telemetry
+metadata:
+  name: mesh-default
+  namespace: istio-system
+spec:
+  accessLogging:
+    - providers:
+      - name: envoy
+ENDSNIP
+
+! read -r -d '' snip_using_mesh_config_1 <<\ENDSNIP
 spec:
   meshConfig:
     accessLogFile: /dev/stdout

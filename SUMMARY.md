@@ -95,6 +95,8 @@
     - Traffic Management
       - Dns Proxy
         * [DNS Proxying](ops/configuration/traffic-management/dns-proxy/index.md)
+      - Multicluster
+        * [Multi Cluster Traffic Management](ops/configuration/traffic-management/multicluster/index.md)
       - Network Topologies
         * [Configuring Gateway Network Topology](ops/configuration/traffic-management/network-topologies/index.md)
       - Protocol Selection
@@ -225,6 +227,8 @@
         * [Localhost Listener](reference/config/analysis/ist0143/index.md)
       - Ist 0144
         * [Invalid Application UID](reference/config/analysis/ist0144/index.md)
+      - Ist 0150
+        * [External Name Service Type Invalid Port Name](reference/config/analysis/ist0150/index.md)
       - Message Format
         * [Analyzer Message Format](reference/config/analysis/message-format/index.md)
       * [Configuration Analysis Messages](reference/config/analysis/_index.md)
@@ -273,6 +277,7 @@
     * [Multi Mesh](reference/glossary/multi-mesh.md)
     * [Multicluster](reference/glossary/multicluster.md)
     * [Mutual TLS Authentication](reference/glossary/mutual-tls.md)
+    * [Namespace Sameness](reference/glossary/namespace-sameness.md)
     * [Network](reference/glossary/network.md)
     * [Operator](reference/glossary/operator.md)
     * [Pilot](reference/glossary/pilot.md)
@@ -405,12 +410,12 @@
       * [Oracle Cloud Infrastructure](setup/platform-setup/oci/index.md)
     - Openshift
       * [Open Shift](setup/platform-setup/openshift/index.md)
+    - Tencent Cloud Mesh
+      * [Tencent Cloud](setup/platform-setup/tencent-cloud-mesh/index.md)
     * [Platform Setup](setup/platform-setup/_index.md)
   - Upgrade
     - Canary
       * [Canary Upgrades](setup/upgrade/canary/index.md)
-    - Gateways
-      * [Managing Gateways With Multiple Revisions](setup/upgrade/gateways/index.md)
     - Helm
       * [Upgrade With Helm](setup/upgrade/helm/index.md)
     - In Place
@@ -420,16 +425,12 @@
 - Tasks
   - Observability
     - Distributed Tracing
-      - Configurability
-        - Mesh And Proxy Config
-          * [Configure Tracing Using Mesh Config And Pod Annotations](tasks/observability/distributed-tracing/configurability/mesh-and-proxy-config/index.md)
-        - Telemetry Api
-          * [Configuring Tracing Using The Telemetry API](tasks/observability/distributed-tracing/configurability/telemetry-api/index.md)
-        * [Configuration](tasks/observability/distributed-tracing/configurability/_index.md)
       - Jaeger
         * [Jaeger](tasks/observability/distributed-tracing/jaeger/index.md)
       - Lightstep
         * [Lightstep](tasks/observability/distributed-tracing/lightstep/index.md)
+      - Mesh And Proxy Config
+        * [Configure Tracing Using Mesh Config And Pod Annotations](tasks/observability/distributed-tracing/mesh-and-proxy-config/index.md)
       - Overview
         * [Overview](tasks/observability/distributed-tracing/overview/index.md)
       - Zipkin
@@ -441,7 +442,7 @@
       * [Visualizing Your Mesh](tasks/observability/kiali/index.md)
     - Logs
       - Access Log
-        * [Getting Envoy S Access Logs](tasks/observability/logs/access-log/index.md)
+        * [Envoy Access Logs](tasks/observability/logs/access-log/index.md)
       * [Logs](tasks/observability/logs/_index.md)
     - Metrics
       - Classify Metrics
@@ -455,6 +456,8 @@
       - Using Istio Dashboard
         * [Visualizing Metrics With Grafana](tasks/observability/metrics/using-istio-dashboard/index.md)
       * [Metrics](tasks/observability/metrics/_index.md)
+    - Telemetry
+      * [Telemetry API](tasks/observability/telemetry/index.md)
     * [Observability](tasks/observability/_index.md)
   - Policy Enforcement
     - Rate Limit
@@ -464,6 +467,8 @@
     - Authentication
       - Authn Policy
         * [Authentication Policy](tasks/security/authentication/authn-policy/index.md)
+      - Jwt Route
+        * [JWT Claim Based Routing](tasks/security/authentication/jwt-route/index.md)
       - Mtls Migration
         * [Mutual TLS Migration](tasks/security/authentication/mtls-migration/index.md)
       * [Authentication](tasks/security/authentication/_index.md)

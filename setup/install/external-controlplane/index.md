@@ -274,6 +274,7 @@ and installing the sidecar injector webhook configuration on the remote cluster 
           caAddress: $EXTERNAL_ISTIOD_ADDR:15012
           istioNamespace: external-istiod
           operatorManageWebhooks: true
+          configValidation: false
           meshID: mesh1
     EOF
     {{< /text >}}
@@ -422,89 +423,83 @@ including gateways, if needed.
 
 #### Enable gateways
 
-1. Enable an ingress gateway on the remote cluster:
+Enable an ingress gateway on the remote cluster:
 
-    {{< tabset category-name="ingress-gateway-install-type" >}}
-    {{< tab name="IstioOperator" category-value="iop" >}}
+{{< tabset category-name="ingress-gateway-install-type" >}}
 
-    {{< text bash >}}
-    $ cat <<EOF > istio-ingressgateway.yaml
-    apiVersion: install.istio.io/v1alpha1
-    kind: IstioOperator
-    spec:
-      profile: empty
-      components:
-        ingressGateways:
-        - namespace: external-istiod
-          name: istio-ingressgateway
-          enabled: true
-      values:
-        gateways:
-          istio-ingressgateway:
-            injectionTemplate: gateway
-    EOF
-    $ istioctl install -f istio-ingressgateway.yaml --context="${CTX_REMOTE_CLUSTER}"
-    {{< /text >}}
+{{< tab name="IstioOperator" category-value="iop" >}}
 
-    {{< /tab >}}
-
-    {{< tab name="Helm" category-value="helm" >}}
-
-    {{< text bash >}}
-    $ cat <<EOF > values.yaml
+{{< text bash >}}
+$ cat <<EOF > istio-ingressgateway.yaml
+apiVersion: install.istio.io/v1alpha1
+kind: IstioOperator
+spec:
+  profile: empty
+  components:
+    ingressGateways:
+    - namespace: external-istiod
+      name: istio-ingressgateway
+      enabled: true
+  values:
     gateways:
-        istio-ingressgateway:
-          # Enable gateway injection
-          injectionTemplate: gateway
-          name: istio-ingressgateway
-    EOF
-    $ helm install istio-ingress manifests/charts/gateways/istio-ingress  -f values.yaml -n external-istiod --kube-context="${CTX_REMOTE_CLUSTER}"
-    {{< /text >}}
+      istio-ingressgateway:
+        injectionTemplate: gateway
+EOF
+$ istioctl install -f istio-ingressgateway.yaml --set values.global.istioNamespace=external-istiod --context="${CTX_REMOTE_CLUSTER}"
+{{< /text >}}
+
+{{< /tab >}}
+
+{{< tab name="Helm" category-value="helm" >}}
+
+{{< text bash >}}
+$ helm install istio-ingressgateway istio/gateway -n external-istiod --kube-context="${CTX_REMOTE_CLUSTER}"
+{{< /text >}}
+
+See [Installing Gateways](/docs/setup/additional-setup/gateway/) for in-depth documentation on gateway installation.
 
     {{< /tab >}}
     {{< /tabset >}}
 
-1. Enable an egress gateway, or other gateways, on the remote cluster (optional):
+You can optionally enable other gateways as well. For example, an egress gateway:
 
-    {{< tabset category-name="egress-gateway-install-type" >}}
-    {{< tab name="IstioOperator" category-value="iop" >}}
+{{< tabset category-name="egress-gateway-install-type" >}}
 
-    {{< text bash >}}
-    $ cat <<EOF > istio-egressgateway.yaml
-    apiVersion: install.istio.io/v1alpha1
-    kind: IstioOperator
-    spec:
-      profile: empty
-      components:
-        egressGateways:
-        - namespace: external-istiod
-          name: istio-egressgateway
-          enabled: true
-      values:
-        gateways:
-          istio-egressgateway:
-            injectionTemplate: gateway
-    EOF
-    $ istioctl install -f istio-egressgateway.yaml --context="${CTX_REMOTE_CLUSTER}"
-    {{< /text >}}
+{{< tab name="IstioOperator" category-value="iop" >}}
 
-    {{< /tab >}}
-
-    {{< tab name="Helm" category-value="helm" >}}
-
-    {{< text bash >}}
-    $ cat <<EOF > values.yaml
+{{< text bash >}}
+$ cat <<EOF > istio-egressgateway.yaml
+apiVersion: install.istio.io/v1alpha1
+kind: IstioOperator
+spec:
+  profile: empty
+  components:
+    egressGateways:
+    - namespace: external-istiod
+      name: istio-egressgateway
+      enabled: true
+  values:
     gateways:
-        istio-egressgateway:
-          # Enable gateway injection
-          injectionTemplate: gateway
-          name: istio-egressgateway
-    EOF
-    $ helm install istio-egress manifests/charts/gateways/istio-egress  -f values.yaml -n external-istiod --kube-context="${CTX_REMOTE_CLUSTER}"
-    {{< /text >}}
+      istio-egressgateway:
+        injectionTemplate: gateway
+EOF
+$ istioctl install -f istio-egressgateway.yaml --set values.global.istioNamespace=external-istiod --context="${CTX_REMOTE_CLUSTER}"
+{{< /text >}}
 
-    {{< /tab >}}
-    {{< /tabset >}}
+{{< /tab >}}
+
+{{< tab name="Helm" category-value="helm" >}}
+
+{{< text bash >}}
+$ helm install istio-egressgateway istio/gateway -n external-istiod --kube-context="${CTX_REMOTE_CLUSTER}" --set service.type=ClusterIP
+{{< /text >}}
+
+See [Installing Gateways](/docs/setup/additional-setup/gateway/) for in-depth documentation on gateway installation.
+
+{{< /tab >}}
+{{< /tabset >}}
+
+#### Test the ingress gateway
 
 1. Confirm that the Istio ingress gateway is running:
 

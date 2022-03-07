@@ -26,7 +26,7 @@ curl -L https://istio.io/downloadIstio | sh -
 }
 
 snip_download_istio_download_2() {
-curl -L https://istio.io/downloadIstio | ISTIO_VERSION=1.6.8 TARGET_ARCH=x86_64 sh -
+curl -L https://istio.io/downloadIstio | ISTIO_VERSION=1.14.0 TARGET_ARCH=x86_64 sh -
 }
 
 snip_download_istio_download_4() {
@@ -242,6 +242,7 @@ istioctl dashboard kiali
 snip_uninstall_1() {
 kubectl delete -f samples/addons
 istioctl manifest generate --set profile=demo | kubectl delete --ignore-not-found=true -f -
+istioctl tag remove default
 }
 
 snip_uninstall_2() {

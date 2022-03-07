@@ -21,8 +21,8 @@ Run the following command to see the log:
 $ kubectl logs PODNAME -c istio-proxy -n NAMESPACE
 {{< /text >}}
 
-In the default access log format, Envoy response flags and Mixer policy status are located after the response code,
-if you are using a custom log format, make sure to include `%RESPONSE_FLAGS%` and `%DYNAMIC_METADATA(istio.mixer:status)%`.
+In the default access log format, Envoy response flags are located after the response code,
+if you are using a custom log format, make sure to include `%RESPONSE_FLAGS%`.
 
 Refer to the [Envoy response flags](https://www.envoyproxy.io/docs/envoy/latest/configuration/observability/access_log/usage#config-access-log-format-response-flags)
 for details of response flags.
@@ -33,16 +33,6 @@ Common response flags are:
 - `UO`: Upstream overflow with circuit breaking, check your circuit breaker configuration in `DestinationRule`.
 - `UF`: Failed to connect to upstream, if you're using Istio authentication, check for a
 [mutual TLS configuration conflict](#503-errors-after-setting-destination-rule).
-
-A request is rejected by Mixer if the response flag is `UAEX` and the Mixer policy status is not `-`.
-
-Common Mixer policy statuses are:
-
-- `UNAVAILABLE`: Envoy cannot connect to Mixer and the policy is configured to fail close.
-- `UNAUTHENTICATED`: The request is rejected by Mixer authentication.
-- `PERMISSION_DENIED`: The request is rejected by Mixer authorization.
-- `RESOURCE_EXHAUSTED`: The request is rejected by Mixer quota.
-- `INTERNAL`: The request is rejected due to Mixer internal error.
 
 ## Route rules don't seem to affect traffic flow
 
@@ -232,6 +222,111 @@ server {
     }
 }
 {{< /text >}}
+
+## 503 error while accessing headless services
+
+Assume Istio is installed with the following configuration:
+
+- `mTLS mode` set to `STRICT` within the mesh
+- `meshConfig.outboundTrafficPolicy.mode` set to `ALLOW_ANY`
+
+Consider `nginx` is deployed as a `StatefulSet` in the default namespace and a corresponding `Headless Service` is defined as shown below:
+
+{{< text yaml >}}
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx
+  labels:
+    app: nginx
+spec:
+  ports:
+  - port: 80
+    name: http-web  # Explicitly defining an http port
+  clusterIP: None   # Creates a Headless Service
+  selector:
+    app: nginx
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: web
+spec:
+  selector:
+    matchLabels:
+      app: nginx
+  serviceName: "nginx"
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: k8s.gcr.io/nginx-slim:0.8
+        ports:
+        - containerPort: 80
+          name: web
+{{< /text >}}
+
+The port name `http-web` in the Service definition explicitly specifies the http protocol for that port.
+
+Let us assume we have a [sleep]({{< github_tree >}}/samples/sleep) pod `Deployment` as well in the default namespace.
+When `nginx` is accessed from this `sleep` pod using its Pod IP (this is one of the common ways to access a headless service), the request goes via the `PassthroughCluster` to the server-side, but the sidecar proxy on the server-side fails to find the route entry to `nginx` and fails with `HTTP 503 UC`.
+
+{{< text bash >}}
+$ export SOURCE_POD=$(kubectl get pod -l app=sleep -o jsonpath='{.items..metadata.name}')
+$ kubectl exec -it $SOURCE_POD -c sleep -- curl 10.1.1.171 -s -o /dev/null -w "%{http_code}"
+  503
+{{< /text >}}
+
+`10.1.1.171` is the Pod IP of one of the replicas of `nginx` and the service is accessed on `containerPort` 80.
+
+Here are some of the ways to avoid this 503 error:
+
+1. Specify the correct Host header:
+
+    The Host header in the curl request above will be the Pod IP by default. Specifying the Host header as `nginx.default` in our request to `nginx` successfully returns `HTTP 200 OK`.
+
+    {{< text bash >}}
+    $ export SOURCE_POD=$(kubectl get pod -l app=sleep -o jsonpath='{.items..metadata.name}')
+    $ kubectl exec -it $SOURCE_POD -c sleep -- curl -H "Host: nginx.default" 10.1.1.171 -s -o /dev/null -w "%{http_code}"
+      200
+    {{< /text >}}
+
+1. Set port name to `tcp` or `tcp-web` or `tcp-<custom_name>`:
+
+    Here the protocol is explicitly specified as `tcp`. In this case, only the `TCP Proxy` network filter on the sidecar proxy is used both on the client-side and server-side. HTTP Connection Manager is not used at all and therefore, any kind of header is not expected in the request.
+
+    A request to `nginx` with or without explicitly setting the Host header successfully returns `HTTP 200 OK`.
+
+    This is useful in certain scenarios where a client may not be able to include header information in the request.
+
+    {{< text bash >}}
+    $ export SOURCE_POD=$(kubectl get pod -l app=sleep -o jsonpath='{.items..metadata.name}')
+    $ kubectl exec -it $SOURCE_POD -c sleep -- curl 10.1.1.171 -s -o /dev/null -w "%{http_code}"
+      200
+    {{< /text >}}
+
+    {{< text bash >}}
+    $ kubectl exec -it $SOURCE_POD -c sleep -- curl -H "Host: nginx.default" 10.1.1.171 -s -o /dev/null -w "%{http_code}"
+      200
+    {{< /text >}}
+
+1. Use domain name instead of Pod IP:
+
+    A specific instance of a headless service can also be accessed using just the domain name.
+
+    {{< text bash >}}
+    $ export SOURCE_POD=$(kubectl get pod -l app=sleep -o jsonpath='{.items..metadata.name}')
+    $ kubectl exec -it $SOURCE_POD -c sleep -- curl web-0.nginx.default -s -o /dev/null -w "%{http_code}"
+      200
+    {{< /text >}}
+
+    Here `web-0` is the pod name of one of the 3 replicas of `nginx`.
+
+Refer to this [traffic routing](/docs/ops/configuration/traffic-management/traffic-routing/) page for some additional information on headless services and traffic routing behavior for different protocols.
 
 ## TLS configuration mistakes
 
@@ -453,7 +548,7 @@ spec:
     protocol: HTTP
 {{< /text >}}
 
-Note that with this configuration your application will need to send plaintext requests to port 433,
+Note that with this configuration your application will need to send plaintext requests to port 443,
 like `curl http://httpbin.org:443`, because TLS origination does not change the port.
 However, starting in Istio 1.8, you can expose HTTP port 80 to the application (e.g., `curl http://httpbin.org`)
 and then redirect requests to `targetPort` 443 for the TLS origination:
@@ -524,3 +619,41 @@ Most cloud load balancers will not forward the SNI, so if you are terminating TL
 - Disable SNI matching in the `Gateway` by setting the hosts field to `*`
 
 A common symptom of this is for the load balancer health checks to succeed while real traffic fails.
+
+## Unchanged Envoy filter configuration suddenly stops working
+
+An `EnvoyFilter` configuration that specifies an insert position relative to another filter can be very
+fragile because, by default, the order of evaluation is based on the creation time of the filters.
+Consider a filter with the following specification:
+
+{{< text yaml >}}
+spec:
+  configPatches:
+  - applyTo: NETWORK_FILTER
+    match:
+      context: SIDECAR_OUTBOUND
+      listener:
+        portNumber: 443
+        filterChain:
+          filter:
+            name: istio.stats
+    patch:
+      operation: INSERT_BEFORE
+      value:
+        ...
+{{< /text >}}
+
+To work properly, this filter configuration depends on the `istio.stats` filter having an older creation time
+than it. Otherwise, the `INSERT_BEFORE` operation will be silently ignored. There will be nothing in the
+error log to indicate that this filter has not been added to the chain.
+
+This is particularly problematic when matching filters, like `istio.stats`, that are version
+specific (i.e., that include the `proxyVersion` field in their match criteria). Such filters may be removed
+or replaced by newer ones when upgrading Istio. As a result, an `EnvoyFilter` like the one above may initially
+be working perfectly but after upgrading Istio to a newer version it will no longer be included in the network
+filter chain of the sidecars.
+
+To avoid this issue, you can either change the operation to one that does not depend on the presence of
+another filter (e.g., `INSERT_FIRST`), or set an explicit priority in the `EnvoyFilter` to override the
+default creation time-based ordering. For example, adding `priority: 10` to the above filter will ensure
+that it is processed after the `istio.stats` filter which has a default priority of 0.

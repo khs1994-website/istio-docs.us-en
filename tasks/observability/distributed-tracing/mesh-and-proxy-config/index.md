@@ -5,13 +5,14 @@ weight: 11
 keywords: [telemetry,tracing]
 aliases:
  - /docs/tasks/observability/distributed-tracing/configurability/
+ - /docs/tasks/observability/distributed-tracing/configurability/mesh-and-proxy-config/
 owner: istio/wg-policies-and-telemetry-maintainers
 test: no
 status: Beta/Experimental
 ---
 
 {{< tip >}}
-Users are encouraged to transition to the [Telemetry API](/docs/tasks/observability/distributed-tracing/configurability/telemetry-api/) for tracing configuration.
+Users are encouraged to transition to the [Telemetry API](/docs/tasks/observability/telemetry/) for tracing configuration.
 {{</ tip >}}
 
 Istio provides the ability to configure advanced tracing options,
@@ -129,13 +130,15 @@ spec:
   template:
     metadata:
       ...
-      proxy.istio.io/config: |
-        tracing:
-          sampling: 10
-          custom_tags:
-            my_tag_header:
-              header:
-                name: host
+      annotations:
+        ...
+        proxy.istio.io/config: |
+          tracing:
+            sampling: 10
+            custom_tags:
+              my_tag_header:
+                header:
+                  name: host
     spec:
       ...
 {{< /text >}}

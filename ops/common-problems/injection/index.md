@@ -148,7 +148,7 @@ Verify the `caBundle` in the `mutatingwebhookconfiguration` matches the
 {{< text bash >}}
 $ kubectl get mutatingwebhookconfiguration istio-sidecar-injector -o yaml -o jsonpath='{.webhooks[0].clientConfig.caBundle}' | md5sum
 4b95d2ba22ce8971c7c92084da31faf0  -
-$ kubectl -n istio-system get secret istiod-service-account-token -o jsonpath='{.data.root-cert\.pem}' | md5sum
+$ kubectl -n istio-system get configmap istio-ca-root-cert -o jsonpath='{.data.root-cert\.pem}' | base64 -w 0 | md5sum
 4b95d2ba22ce8971c7c92084da31faf0  -
 {{< /text >}}
 
@@ -239,3 +239,21 @@ node autoscaler is unable to evict nodes with the injected pods. This is
 a [known issue](https://github.com/kubernetes/autoscaler/issues/3947). The workaround is
 to add a pod annotation `"cluster-autoscaler.kubernetes.io/safe-to-evict":
 "true"` to the injected pods.
+
+## Pod or containers start with network issues if istio-proxy is not ready
+
+Many applications execute commands or checks during startup, which require network connectivity. This can cause application containers to hang or restart if the `istio-proxy` sidecar container is not ready.
+
+To avoid this, set `holdApplicationUntilProxyStarts` to `true`. This causes the sidecar injector to inject the sidecar at the start of the pod’s container list, and configures it to block the start of all other containers until the proxy is ready.
+
+This can be added as a global config option:
+
+{{< text yaml >}}
+values.global.proxy.holdApplicationUntilProxyStarts: true
+{{< /text >}}
+
+or as a pod annotation:
+
+{{< text yaml >}}
+proxy.istio.io/config: '{ "holdApplicationUntilProxyStarts": true }'
+{{< /text >}}
