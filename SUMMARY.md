@@ -443,6 +443,8 @@
     - Logs
       - Access Log
         * [Envoy Access Logs](tasks/observability/logs/access-log/index.md)
+      - Otel Provider
+        * [Open Telemetry](tasks/observability/logs/otel-provider/index.md)
       * [Logs](tasks/observability/logs/_index.md)
     - Metrics
       - Classify Metrics
