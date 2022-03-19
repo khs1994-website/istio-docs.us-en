@@ -93,6 +93,8 @@
         * [Monitoring Multicluster Istio With Prometheus](ops/configuration/telemetry/monitoring-multicluster-prometheus/index.md)
       * [Observability](ops/configuration/telemetry/_index.md)
     - Traffic Management
+      - Dns
+        * [Understanding DNS](ops/configuration/traffic-management/dns/index.md)
       - Dns Proxy
         * [DNS Proxying](ops/configuration/traffic-management/dns-proxy/index.md)
       - Multicluster
