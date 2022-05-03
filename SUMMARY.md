@@ -502,6 +502,10 @@
       - Plugin Ca Cert
         * [Plug In CA Certificates](tasks/security/cert-management/plugin-ca-cert/index.md)
       * [Certificate Management](tasks/security/cert-management/_index.md)
+    - Tls Configuration
+      - Workload Min Tls Version
+        * [Istio Workload Mininum TLS Version Configuration](tasks/security/tls-configuration/workload-min-tls-version/index.md)
+      * [TLS Configuration](tasks/security/tls-configuration/_index.md)
     * [Security](tasks/security/_index.md)
   - Traffic Management
     - Circuit Breaking
