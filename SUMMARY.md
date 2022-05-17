@@ -152,6 +152,8 @@
       * [Kiali](ops/integrations/kiali/index.md)
     - Prometheus
       * [Prometheus](ops/integrations/prometheus/index.md)
+    - Spire
+      * [SPIRE](ops/integrations/spire/index.md)
     - Zipkin
       * [Zipkin](ops/integrations/zipkin/index.md)
     * [Integrations](ops/integrations/_index.md)
