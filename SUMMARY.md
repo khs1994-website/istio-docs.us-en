@@ -414,6 +414,8 @@
       * [Oracle Cloud Infrastructure](setup/platform-setup/oci/index.md)
     - Openshift
       * [Open Shift](setup/platform-setup/openshift/index.md)
+    - Prerequisites
+      * [Platform Prerequisites](setup/platform-setup/prerequisites/index.md)
     - Tencent Cloud Mesh
       * [Tencent Cloud](setup/platform-setup/tencent-cloud-mesh/index.md)
     * [Platform Setup](setup/platform-setup/_index.md)
@@ -506,7 +508,7 @@
       * [Certificate Management](tasks/security/cert-management/_index.md)
     - Tls Configuration
       - Workload Min Tls Version
-        * [Istio Workload Mininum TLS Version Configuration](tasks/security/tls-configuration/workload-min-tls-version/index.md)
+        * [Istio Workload Minimum TLS Version Configuration](tasks/security/tls-configuration/workload-min-tls-version/index.md)
       * [TLS Configuration](tasks/security/tls-configuration/_index.md)
     * [Security](tasks/security/_index.md)
   - Traffic Management
