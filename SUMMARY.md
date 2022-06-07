@@ -501,8 +501,6 @@
     - Cert Management
       - Custom Ca K 8 S
         * [Custom CA Integration Using Kubernetes CSR](tasks/security/cert-management/custom-ca-k8s/index.md)
-      - Dns Cert
-        * [Istio DNS Certificate Management](tasks/security/cert-management/dns-cert/index.md)
       - Plugin Ca Cert
         * [Plug In CA Certificates](tasks/security/cert-management/plugin-ca-cert/index.md)
       * [Certificate Management](tasks/security/cert-management/_index.md)
