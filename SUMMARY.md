@@ -67,8 +67,8 @@
     * [Common Problems](ops/common-problems/_index.md)
   - Configuration
     - Extensibility
-      - Wasm Module Distribution
-        * [Distributing Web Assembly Modules](ops/configuration/extensibility/wasm-module-distribution/index.md)
+      - Wasm Pull Policy
+        * [Pull Policy For Web Assembly Modules](ops/configuration/extensibility/wasm-pull-policy/index.md)
       * [Extensibility](ops/configuration/extensibility/_index.md)
     - Mesh
       - App Health Check
@@ -429,6 +429,10 @@
     * [Upgrade Istio](setup/upgrade/_index.md)
   * [Setup](setup/_index.md)
 - Tasks
+  - Extensibility
+    - Wasm Module Distribution
+      * [Distributing Web Assembly Modules](tasks/extensibility/wasm-module-distribution/index.md)
+    * [Extensibility](tasks/extensibility/_index.md)
   - Observability
     - Distributed Tracing
       - Jaeger
