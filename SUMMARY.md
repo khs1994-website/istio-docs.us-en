@@ -46,6 +46,8 @@
   - Best Practices
     - Deployment
       * [Deployment Best Practices](ops/best-practices/deployment/index.md)
+    - Image Signing Validation
+      * [Image Signing And Validation](ops/best-practices/image-signing-validation/index.md)
     - Observability
       * [Observability Best Practices](ops/best-practices/observability/index.md)
     - Security
