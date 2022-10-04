@@ -368,6 +368,8 @@
       * [Advanced Helm Chart Customization](setup/additional-setup/customize-installation-helm/index.md)
     - Gateway
       * [Installing Gateways](setup/additional-setup/gateway/index.md)
+    - Getting Started
+      * [Getting Started With Istio And Kubernetes Gateway API](setup/additional-setup/getting-started/index.md)
     - Sidecar Injection
       * [Installing The Sidecar](setup/additional-setup/sidecar-injection/index.md)
     * [More Guides](setup/additional-setup/_index.md)
