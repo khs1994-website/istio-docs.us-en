@@ -555,6 +555,8 @@
         * [Kubernetes Gateway API](tasks/traffic-management/ingress/gateway-api/index.md)
       - Ingress Control
         * [Ingress Gateways](tasks/traffic-management/ingress/ingress-control/index.md)
+      - Ingress Sidecar Tls Termination
+        * [Ingress Sidecar TLS Termination](tasks/traffic-management/ingress/ingress-sidecar-tls-termination/index.md)
       - Ingress Sni Passthrough
         * [Ingress Gateway Without TLS Termination](tasks/traffic-management/ingress/ingress-sni-passthrough/index.md)
       - Kubernetes Ingress
