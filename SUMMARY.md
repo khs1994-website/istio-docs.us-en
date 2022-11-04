@@ -152,6 +152,8 @@
       * [Kiali](ops/integrations/kiali/index.md)
     - Prometheus
       * [Prometheus](ops/integrations/prometheus/index.md)
+    - Skywalking
+      * [Apache Sky Walking](ops/integrations/skywalking/index.md)
     - Spire
       * [SPIRE](ops/integrations/spire/index.md)
     - Zipkin
@@ -459,6 +461,8 @@
         * [Open Census Agent](tasks/observability/distributed-tracing/opencensusagent/index.md)
       - Overview
         * [Overview](tasks/observability/distributed-tracing/overview/index.md)
+      - Skywalking
+        * [Apache Sky Walking](tasks/observability/distributed-tracing/skywalking/index.md)
       - Zipkin
         * [Zipkin](tasks/observability/distributed-tracing/zipkin/index.md)
       * [Distributed Tracing](tasks/observability/distributed-tracing/_index.md)
