@@ -33,9 +33,9 @@
     - Production Testing
       * [Test In Production](examples/microservices-istio/production-testing/index.md)
     - Setup Kubernetes Cluster
-      * [Setup A Kubernetes Cluster](examples/microservices-istio/setup-kubernetes-cluster/index.md)
+      * [Set Up A Kubernetes Cluster](examples/microservices-istio/setup-kubernetes-cluster/index.md)
     - Setup Local Computer
-      * [Setup A Local Computer](examples/microservices-istio/setup-local-computer/index.md)
+      * [Set Up A Local Computer](examples/microservices-istio/setup-local-computer/index.md)
     - Single
       * [Run A Microservice Locally](examples/microservices-istio/single/index.md)
     * [Learn Microservices Using Kubernetes And Istio](examples/microservices-istio/_index.md)
