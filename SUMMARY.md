@@ -499,6 +499,8 @@
     - Authentication
       - Authn Policy
         * [Authentication Policy](tasks/security/authentication/authn-policy/index.md)
+      - Claim To Header
+        * [Copy JWT Claims To HTTP Headers](tasks/security/authentication/claim-to-header/index.md)
       - Jwt Route
         * [JWT Claim Based Routing](tasks/security/authentication/jwt-route/index.md)
       - Mtls Migration
