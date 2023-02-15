@@ -418,6 +418,7 @@
       * [Huawei Cloud](setup/platform-setup/huaweicloud/index.md)
     - Ibm
       * [IBM Cloud](setup/platform-setup/ibm/index.md)
+    - [K 3 D](setup/platform-setup/k3d/index.md)
     - [Kind](setup/platform-setup/kind/index.md)
     - Kops
       * [Kops](setup/platform-setup/kops/index.md)
