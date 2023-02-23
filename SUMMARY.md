@@ -43,6 +43,14 @@
     * [Bookinfo With A Virtual Machine](examples/virtual-machines/index.md)
   * [Examples](examples/_index.md)
 - Ops
+  - Ambient
+    - Architecture
+      * [Ambient Mesh Architecture](ops/ambient/architecture/index.md)
+    - Getting Started
+      * [Getting Started With Ambient Mesh](ops/ambient/getting-started/index.md)
+    - Usage
+      * [Ambient Mesh Usage Guide](ops/ambient/usage/index.md)
+    * [Ambient Mesh WIP](ops/ambient/_index.md)
   - Best Practices
     - Deployment
       * [Deployment Best Practices](ops/best-practices/deployment/index.md)
