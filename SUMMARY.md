@@ -251,6 +251,8 @@
         * [Envoy Filter Uses Remove Operation Incorrectly](reference/config/analysis/ist0154/index.md)
       - Ist 0155
         * [Envoy Filter Uses Relative Operation With Proxy Version](reference/config/analysis/ist0155/index.md)
+      - Ist 0158
+        * [Pods Istio Proxy Image Mismatch In Namespace](reference/config/analysis/ist0158/index.md)
       - Message Format
         * [Analyzer Message Format](reference/config/analysis/message-format/index.md)
       * [Configuration Analysis Messages](reference/config/analysis/_index.md)
