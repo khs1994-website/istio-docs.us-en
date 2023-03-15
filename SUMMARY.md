@@ -536,7 +536,7 @@
       - Authz Http
         * [HTTP Traffic](tasks/security/authorization/authz-http/index.md)
       - Authz Ingress
-        * [Ingress Gateway Access Control](tasks/security/authorization/authz-ingress/index.md)
+        * [Ingress Access Control](tasks/security/authorization/authz-ingress/index.md)
       - Authz Jwt
         * [JWT Token](tasks/security/authorization/authz-jwt/index.md)
       - Authz Tcp
