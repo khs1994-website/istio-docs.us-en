@@ -505,6 +505,8 @@
         * [Querying Metrics From Prometheus](tasks/observability/metrics/querying-metrics/index.md)
       - Tcp Metrics
         * [Collecting Metrics For TCP Services](tasks/observability/metrics/tcp-metrics/index.md)
+      - Telemetry Api
+        * [Customizing Istio Metrics With Telemetry API](tasks/observability/metrics/telemetry-api/index.md)
       - Using Istio Dashboard
         * [Visualizing Metrics With Grafana](tasks/observability/metrics/using-istio-dashboard/index.md)
       * [Metrics](tasks/observability/metrics/_index.md)
