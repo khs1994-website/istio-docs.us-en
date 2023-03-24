@@ -469,6 +469,8 @@
     * [Extensibility](tasks/extensibility/_index.md)
   - Observability
     - Distributed Tracing
+      - Gateway Api
+        * [Configure Tracing With Telemetry API](tasks/observability/distributed-tracing/gateway-api/index.md)
       - Jaeger
         * [Jaeger](tasks/observability/distributed-tracing/jaeger/index.md)
       - Lightstep
