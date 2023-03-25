@@ -469,8 +469,6 @@
     * [Extensibility](tasks/extensibility/_index.md)
   - Observability
     - Distributed Tracing
-      - Gateway Api
-        * [Configure Tracing With Telemetry API](tasks/observability/distributed-tracing/gateway-api/index.md)
       - Jaeger
         * [Jaeger](tasks/observability/distributed-tracing/jaeger/index.md)
       - Lightstep
@@ -483,6 +481,8 @@
         * [Overview](tasks/observability/distributed-tracing/overview/index.md)
       - Skywalking
         * [Apache Sky Walking](tasks/observability/distributed-tracing/skywalking/index.md)
+      - Telemetry Api
+        * [Configure Tracing With Telemetry API](tasks/observability/distributed-tracing/telemetry-api/index.md)
       - Zipkin
         * [Zipkin](tasks/observability/distributed-tracing/zipkin/index.md)
       * [Distributed Tracing](tasks/observability/distributed-tracing/_index.md)
