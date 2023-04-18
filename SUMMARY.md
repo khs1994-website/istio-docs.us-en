@@ -387,6 +387,8 @@
       * [Installing Gateways](setup/additional-setup/gateway/index.md)
     - Getting Started
       * [Getting Started With Istio And Kubernetes Gateway API](setup/additional-setup/getting-started/index.md)
+    - Pod Security Admission
+      * [Install Istio With Pod Security Admission](setup/additional-setup/pod-security-admission/index.md)
     - Sidecar Injection
       * [Installing The Sidecar](setup/additional-setup/sidecar-injection/index.md)
     * [More Guides](setup/additional-setup/_index.md)
@@ -496,7 +498,7 @@
       - Otel Provider
         * [Open Telemetry](tasks/observability/logs/otel-provider/index.md)
       - Telemetry Api
-        * [Work With Telemetry API](tasks/observability/logs/telemetry-api/index.md)
+        * [Configure Access Logs With Telemetry API](tasks/observability/logs/telemetry-api/index.md)
       * [Logs](tasks/observability/logs/_index.md)
     - Metrics
       - Classify Metrics
