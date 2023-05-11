@@ -253,6 +253,10 @@
         * [Envoy Filter Uses Relative Operation With Proxy Version](reference/config/analysis/ist0155/index.md)
       - Ist 0158
         * [Pods Istio Proxy Image Mismatch In Namespace](reference/config/analysis/ist0158/index.md)
+      - Ist 0159
+        * [Conflicting Telemetry Workload Selectors](reference/config/analysis/ist0159/index.md)
+      - Ist 0160
+        * [Multiple Telemetries Without Workload Selectors](reference/config/analysis/ist0160/index.md)
       - Message Format
         * [Analyzer Message Format](reference/config/analysis/message-format/index.md)
       * [Configuration Analysis Messages](reference/config/analysis/_index.md)
