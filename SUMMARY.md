@@ -257,6 +257,8 @@
         * [Conflicting Telemetry Workload Selectors](reference/config/analysis/ist0159/index.md)
       - Ist 0160
         * [Multiple Telemetries Without Workload Selectors](reference/config/analysis/ist0160/index.md)
+      - Ist 0161
+        * [Invalid Gateway Credential](reference/config/analysis/ist0161/index.md)
       - Message Format
         * [Analyzer Message Format](reference/config/analysis/message-format/index.md)
       * [Configuration Analysis Messages](reference/config/analysis/_index.md)
