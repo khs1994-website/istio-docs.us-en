@@ -158,6 +158,8 @@
       * [Jaeger](ops/integrations/jaeger/index.md)
     - Kiali
       * [Kiali](ops/integrations/kiali/index.md)
+    - Loadbalancers
+      * [Third Party Load Balancers](ops/integrations/loadbalancers/index.md)
     - Prometheus
       * [Prometheus](ops/integrations/prometheus/index.md)
     - Skywalking
