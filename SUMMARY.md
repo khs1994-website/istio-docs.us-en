@@ -72,6 +72,8 @@
       * [Observability Problems](ops/common-problems/observability-issues/index.md)
     - Security Issues
       * [Security Problems](ops/common-problems/security-issues/index.md)
+    - Upgrade Issues
+      * [Upgrade Problems](ops/common-problems/upgrade-issues/index.md)
     - Validation
       * [Configuration Validation Problems](ops/common-problems/validation/index.md)
     * [Common Problems](ops/common-problems/_index.md)
