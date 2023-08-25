@@ -124,6 +124,8 @@
       * [Architecture](ops/deployment/architecture/index.md)
     - Deployment Models
       * [Deployment Models](ops/deployment/deployment-models/index.md)
+    - Performance And Scalability
+      * [Performance And Scalability](ops/deployment/performance-and-scalability/index.md)
     - Requirements
       * [Application Requirements](ops/deployment/requirements/index.md)
     - Vm Architecture
