@@ -18,15 +18,12 @@
 source "tests/util/gateway-api.sh"
 install_gateway_api_crds
 
-# @setup profile=none
-source "content/en/boilerplates/snips/gateway-api-gamma-support.sh"
-bpsnip_gateway_api_gamma_support_enable_alpha_crds
-source "content/en/docs/tasks/traffic-management/tcp-traffic-shifting/test.sh"
+# @setup profile=default
+source "content/en/docs/tasks/traffic-management/request-timeouts/test.sh"
 
 # @cleanup
+source "tests/util/samples.sh"
 snip_cleanup_2
-snip_cleanup_3
-
-istioctl uninstall --purge -y
-kubectl delete ns istio-system
+cleanup_bookinfo_sample
+cleanup_sleep_sample
 remove_gateway_api_crds
