@@ -49,7 +49,13 @@
     - Getting Started
       * [Getting Started With Ambient Mesh](ops/ambient/getting-started/index.md)
     - Usage
-      * [Ambient Mesh Usage Guide](ops/ambient/usage/index.md)
+      - Install
+        * [Installation Guide](ops/ambient/usage/install/index.md)
+      - Waypoint
+        * [L 7 Networking Services With Waypoint](ops/ambient/usage/waypoint/index.md)
+      - Ztunnel
+        * [L 4 Networking M TLS With Ztunnel](ops/ambient/usage/ztunnel/index.md)
+      * [Ambient Mesh User Guides](ops/ambient/usage/_index.md)
     * [Ambient Mesh](ops/ambient/_index.md)
   - Best Practices
     - Deployment
