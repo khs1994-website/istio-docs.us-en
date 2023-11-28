@@ -405,6 +405,8 @@
       * [Customizing The Installation Configuration](setup/additional-setup/customize-installation/index.md)
     - Customize Installation Helm
       * [Advanced Helm Chart Customization](setup/additional-setup/customize-installation-helm/index.md)
+    - Dual Stack
+      * [Install Istio In Dual Stack Mode](setup/additional-setup/dual-stack/index.md)
     - Gateway
       * [Installing Gateways](setup/additional-setup/gateway/index.md)
     - Getting Started
