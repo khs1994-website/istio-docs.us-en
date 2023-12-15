@@ -48,9 +48,11 @@
       * [Ambient Mesh Architecture](ops/ambient/architecture/index.md)
     - Getting Started
       * [Getting Started With Ambient Mesh](ops/ambient/getting-started/index.md)
+    - Install
+      - Helm Installation
+        * [Install With Helm](ops/ambient/install/helm-installation/index.md)
+      * [Installation Guide](ops/ambient/install/_index.md)
     - Usage
-      - Install
-        * [Installation Guide](ops/ambient/usage/install/index.md)
       - Waypoint
         * [L 7 Networking Services With Waypoint](ops/ambient/usage/waypoint/index.md)
       - Ztunnel
