@@ -217,8 +217,6 @@
         * [Deployment Associated To Multiple Services](reference/config/analysis/ist0116/index.md)
       - Ist 0118
         * [Port Name Is Not Under Naming Convention](reference/config/analysis/ist0118/index.md)
-      - Ist 0119
-        * [Jwt Failure Due To Invalid Service Port Prefix](reference/config/analysis/ist0119/index.md)
       - Ist 0122
         * [Invalid Regexp](reference/config/analysis/ist0122/index.md)
       - Ist 0123
