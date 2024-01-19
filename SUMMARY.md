@@ -401,6 +401,8 @@
   - Additional Setup
     - Cni
       * [Install Istio With The Istio CNI Plugin](setup/additional-setup/cni/index.md)
+    - Compatibility Versions
+      * [Compatibility Versions](setup/additional-setup/compatibility-versions/index.md)
     - Config Profiles
       * [Installation Configuration Profiles](setup/additional-setup/config-profiles/index.md)
     - Customize Installation
