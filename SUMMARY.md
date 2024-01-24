@@ -52,6 +52,10 @@
       - Helm Installation
         * [Install With Helm](ops/ambient/install/helm-installation/index.md)
       * [Installation Guide](ops/ambient/install/_index.md)
+    - Upgrade
+      - Helm Upgrade
+        * [Upgrade With Helm](ops/ambient/upgrade/helm-upgrade/index.md)
+      * [Upgrade Guide](ops/ambient/upgrade/_index.md)
     - Usage
       - Waypoint
         * [L 7 Networking Services With Waypoint](ops/ambient/usage/waypoint/index.md)
