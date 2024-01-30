@@ -119,6 +119,8 @@
         * [Understanding DNS](ops/configuration/traffic-management/dns/index.md)
       - Dns Proxy
         * [DNS Proxying](ops/configuration/traffic-management/dns-proxy/index.md)
+      - Manage Mesh Certificates
+        * [Managing In Mesh Certificates](ops/configuration/traffic-management/manage-mesh-certificates/index.md)
       - Multicluster
         * [Multi Cluster Traffic Management](ops/configuration/traffic-management/multicluster/index.md)
       - Network Topologies
