@@ -45,9 +45,9 @@
 - Ops
   - Ambient
     - Architecture
-      * [Ambient Mesh Architecture](ops/ambient/architecture/index.md)
+      * [Ambient Mode Architecture](ops/ambient/architecture/index.md)
     - Getting Started
-      * [Getting Started With Ambient Mesh](ops/ambient/getting-started/index.md)
+      * [Getting Started With Ambient Mode](ops/ambient/getting-started/index.md)
     - Install
       - Helm Installation
         * [Install With Helm](ops/ambient/install/helm-installation/index.md)
@@ -58,11 +58,11 @@
       * [Upgrade Guide](ops/ambient/upgrade/_index.md)
     - Usage
       - Waypoint
-        * [L 7 Networking Services With Waypoint](ops/ambient/usage/waypoint/index.md)
+        * [Layer 7 Networking Services With Waypoint Proxies](ops/ambient/usage/waypoint/index.md)
       - Ztunnel
-        * [L 4 Networking M TLS With Ztunnel](ops/ambient/usage/ztunnel/index.md)
-      * [Ambient Mesh User Guides](ops/ambient/usage/_index.md)
-    * [Ambient Mesh](ops/ambient/_index.md)
+        * [Layer 4 Networking M TLS With Ztunnel](ops/ambient/usage/ztunnel/index.md)
+      * [Ambient Mode User Guides](ops/ambient/usage/_index.md)
+    * [Ambient Mode](ops/ambient/_index.md)
   - Best Practices
     - Deployment
       * [Deployment Best Practices](ops/best-practices/deployment/index.md)
