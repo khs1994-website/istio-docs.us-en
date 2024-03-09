@@ -57,6 +57,8 @@
         * [Upgrade With Helm](ops/ambient/upgrade/helm-upgrade/index.md)
       * [Upgrade Guide](ops/ambient/upgrade/_index.md)
     - Usage
+      - Traffic Redirection
+        * [Ztunnel Traffic Redirection](ops/ambient/usage/traffic-redirection/index.md)
       - Waypoint
         * [Layer 7 Networking Services With Waypoint Proxies](ops/ambient/usage/waypoint/index.md)
       - Ztunnel
