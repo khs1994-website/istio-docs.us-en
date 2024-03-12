@@ -51,6 +51,8 @@
     - Install
       - Helm Installation
         * [Install With Helm](ops/ambient/install/helm-installation/index.md)
+      - Platform Prerequisites
+        * [Platform Specific Prerequisites](ops/ambient/install/platform-prerequisites/index.md)
       * [Installation Guide](ops/ambient/install/_index.md)
     - Upgrade
       - Helm Upgrade
