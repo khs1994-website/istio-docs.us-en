@@ -1,5 +1,29 @@
 # [Istio 英文文档](https://github.com/istio/istio.io)
 
+- Ambient
+  - Architecture
+    * [Architecture](ambient/architecture/index.md)
+  - Getting Started
+    * [Getting Started](ambient/getting-started/index.md)
+  - Install
+    - Helm Installation
+      * [Install With Helm](ambient/install/helm-installation/index.md)
+    - Platform Prerequisites
+      * [Platform Specific Prerequisites](ambient/install/platform-prerequisites/index.md)
+    * [Installation Guide](ambient/install/_index.md)
+  - Upgrade
+    - Helm Upgrade
+      * [Upgrade With Helm](ambient/upgrade/helm-upgrade/index.md)
+    * [Upgrade Guide](ambient/upgrade/_index.md)
+  - Usage
+    - Traffic Redirection
+      * [Ztunnel Traffic Redirection](ambient/usage/traffic-redirection/index.md)
+    - Waypoint
+      * [Layer 7 Networking Services With Waypoint Proxies](ambient/usage/waypoint/index.md)
+    - Ztunnel
+      * [Layer 4 Networking M TLS With Ztunnel](ambient/usage/ztunnel/index.md)
+    * [User Guides](ambient/usage/_index.md)
+  * [Ambient Mode](ambient/_index.md)
 - Concepts
   - Observability
     * [Observability](concepts/observability/index.md)
@@ -43,30 +67,6 @@
     * [Bookinfo With A Virtual Machine](examples/virtual-machines/index.md)
   * [Examples](examples/_index.md)
 - Ops
-  - Ambient
-    - Architecture
-      * [Ambient Mode Architecture](ops/ambient/architecture/index.md)
-    - Getting Started
-      * [Getting Started With Ambient Mode](ops/ambient/getting-started/index.md)
-    - Install
-      - Helm Installation
-        * [Install With Helm](ops/ambient/install/helm-installation/index.md)
-      - Platform Prerequisites
-        * [Platform Specific Prerequisites](ops/ambient/install/platform-prerequisites/index.md)
-      * [Installation Guide](ops/ambient/install/_index.md)
-    - Upgrade
-      - Helm Upgrade
-        * [Upgrade With Helm](ops/ambient/upgrade/helm-upgrade/index.md)
-      * [Upgrade Guide](ops/ambient/upgrade/_index.md)
-    - Usage
-      - Traffic Redirection
-        * [Ztunnel Traffic Redirection](ops/ambient/usage/traffic-redirection/index.md)
-      - Waypoint
-        * [Layer 7 Networking Services With Waypoint Proxies](ops/ambient/usage/waypoint/index.md)
-      - Ztunnel
-        * [Layer 4 Networking M TLS With Ztunnel](ops/ambient/usage/ztunnel/index.md)
-      * [Ambient Mode User Guides](ops/ambient/usage/_index.md)
-    * [Ambient Mode](ops/ambient/_index.md)
   - Best Practices
     - Deployment
       * [Deployment Best Practices](ops/best-practices/deployment/index.md)
