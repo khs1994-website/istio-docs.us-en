@@ -503,7 +503,7 @@
     - In Place
       * [In Place Upgrades](setup/upgrade/in-place/index.md)
     * [Upgrade Istio](setup/upgrade/_index.md)
-  * [Setup](setup/_index.md)
+  * [Sidecar Mode](setup/_index.md)
 - Tasks
   - Extensibility
     - Wasm Module Distribution
