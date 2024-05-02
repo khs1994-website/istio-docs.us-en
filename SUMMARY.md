@@ -2,7 +2,9 @@
 
 - Ambient
   - Architecture
-    * [Architecture](ambient/architecture/index.md)
+    - Tls Tunnel
+      * [TLS Tunneling](ambient/architecture/tls-tunnel/index.md)
+    * [Architecture](ambient/architecture/_index.md)
   - Getting Started
     * [Getting Started](ambient/getting-started/index.md)
   - Install
