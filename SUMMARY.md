@@ -2,8 +2,14 @@
 
 - Ambient
   - Architecture
-    - Tls Tunnel
-      * [TLS Tunneling](ambient/architecture/tls-tunnel/index.md)
+    - Control Plane
+      * [Ambient And The Istio Control Plane](ambient/architecture/control-plane/index.md)
+    - Data Plane
+      * [Ambient Data Plane](ambient/architecture/data-plane/index.md)
+    - Hbone
+      * [HBONE](ambient/architecture/hbone/index.md)
+    - Traffic Redirection
+      * [Ztunnel Traffic Redirection](ambient/architecture/traffic-redirection/index.md)
     * [Architecture](ambient/architecture/_index.md)
   - Getting Started
     * [Getting Started](ambient/getting-started/index.md)
@@ -18,8 +24,6 @@
       * [Upgrade With Helm](ambient/upgrade/helm-upgrade/index.md)
     * [Upgrade Guide](ambient/upgrade/_index.md)
   - Usage
-    - Traffic Redirection
-      * [Ztunnel Traffic Redirection](ambient/usage/traffic-redirection/index.md)
     - Waypoint
       * [Layer 7 Networking Services With Waypoint Proxies](ambient/usage/waypoint/index.md)
     - Ztunnel
