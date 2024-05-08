@@ -18,16 +18,22 @@
       * [Install With Helm](ambient/install/helm-installation/index.md)
     - Platform Prerequisites
       * [Platform Specific Prerequisites](ambient/install/platform-prerequisites/index.md)
-    * [Installation Guide](ambient/install/_index.md)
+    * [Install](ambient/install/_index.md)
+  - Overview
+    * [Overview](ambient/overview/index.md)
   - Upgrade
     - Helm Upgrade
       * [Upgrade With Helm](ambient/upgrade/helm-upgrade/index.md)
-    * [Upgrade Guide](ambient/upgrade/_index.md)
+    * [Upgrade](ambient/upgrade/_index.md)
   - Usage
+    - Add Workloads
+      * [Add Workloads To The Mesh](ambient/usage/add-workloads/index.md)
+    - Debugging
+      * [Debug Connectivity Issues With Ztunnel](ambient/usage/debugging/index.md)
+    - Policy
+      * [Enable Policy In Ambient Mode](ambient/usage/policy/index.md)
     - Waypoint
-      * [Layer 7 Networking Services With Waypoint Proxies](ambient/usage/waypoint/index.md)
-    - Ztunnel
-      * [Layer 4 Networking M TLS With Ztunnel](ambient/usage/ztunnel/index.md)
+      * [Configure Waypoint Proxies](ambient/usage/waypoint/index.md)
     * [User Guides](ambient/usage/_index.md)
   * [Ambient Mode](ambient/_index.md)
 - Concepts
