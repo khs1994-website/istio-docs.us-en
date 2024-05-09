@@ -535,6 +535,8 @@
         * [Open Telemetry](tasks/observability/distributed-tracing/opentelemetry/index.md)
       - Overview
         * [Overview](tasks/observability/distributed-tracing/overview/index.md)
+      - Sampling
+        * [Trace Sampling](tasks/observability/distributed-tracing/sampling/index.md)
       - Skywalking
         * [Apache Sky Walking](tasks/observability/distributed-tracing/skywalking/index.md)
       - Telemetry Api
