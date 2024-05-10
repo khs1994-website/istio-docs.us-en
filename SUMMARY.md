@@ -115,6 +115,8 @@
         * [Health Checking Of Istio Services](ops/configuration/mesh/app-health-check/index.md)
       - Config Resource Ready
         * [Wait On Resource Status For Applied Configuration](ops/configuration/mesh/config-resource-ready/index.md)
+      - Configuration Scoping
+        * [Configuration Scoping](ops/configuration/mesh/configuration-scoping/index.md)
       - Webhook
         * [Dynamic Admission Webhooks Overview](ops/configuration/mesh/webhook/index.md)
       * [Mesh Configuration](ops/configuration/mesh/_index.md)
