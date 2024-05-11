@@ -28,10 +28,14 @@
   - Usage
     - Add Workloads
       * [Add Workloads To The Mesh](ambient/usage/add-workloads/index.md)
-    - Debugging
-      * [Debug Connectivity Issues With Ztunnel](ambient/usage/debugging/index.md)
-    - Policy
-      * [Enable Policy In Ambient Mode](ambient/usage/policy/index.md)
+    - L 4 Policy
+      * [Use Layer 4 Security Policy](ambient/usage/l4-policy/index.md)
+    - L 7 Features
+      * [Use Layer 7 Features](ambient/usage/l7-features/index.md)
+    - Troubleshoot Waypoint
+      * [Troubleshoot Issues With Waypoints](ambient/usage/troubleshoot-waypoint/index.md)
+    - Troubleshoot Ztunnel
+      * [Troubleshoot Connectivity Issues With Ztunnel](ambient/usage/troubleshoot-ztunnel/index.md)
     - Waypoint
       * [Configure Waypoint Proxies](ambient/usage/waypoint/index.md)
     * [User Guides](ambient/usage/_index.md)
@@ -329,6 +333,7 @@
     * [Attribute](reference/glossary/attribute.md)
     * [Auto M TLS](reference/glossary/auto-mtls.md)
     * [Cluster](reference/glossary/cluster.md)
+    * [CNI](reference/glossary/cni.md)
     * [Control Plane](reference/glossary/control-plane.md)
     * [CR Ds](reference/glossary/crds.md)
     * [Data Plane](reference/glossary/data-plane.md)
