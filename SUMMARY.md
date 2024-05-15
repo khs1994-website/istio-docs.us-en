@@ -536,8 +536,6 @@
         * [Lightstep](tasks/observability/distributed-tracing/lightstep/index.md)
       - Mesh And Proxy Config
         * [Configure Tracing Using Mesh Config And Pod Annotations](tasks/observability/distributed-tracing/mesh-and-proxy-config/index.md)
-      - Opencensusagent
-        * [Open Census Agent](tasks/observability/distributed-tracing/opencensusagent/index.md)
       - Opentelemetry
         * [Open Telemetry](tasks/observability/distributed-tracing/opentelemetry/index.md)
       - Overview
