@@ -28,6 +28,8 @@
   - Usage
     - Add Workloads
       * [Add Workloads To The Mesh](ambient/usage/add-workloads/index.md)
+    - Extend Waypoint Wasm
+      * [Extend Waypoints With Web Assembly Plugins](ambient/usage/extend-waypoint-wasm/index.md)
     - L 4 Policy
       * [Use Layer 4 Security Policy](ambient/usage/l4-policy/index.md)
     - L 7 Features
