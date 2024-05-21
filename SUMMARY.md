@@ -158,14 +158,16 @@
       * [Traffic Management](ops/configuration/traffic-management/_index.md)
     * [Configuration](ops/configuration/_index.md)
   - Deployment
+    - Application Requirements
+      * [Application Requirements](ops/deployment/application-requirements/index.md)
     - Architecture
       * [Architecture](ops/deployment/architecture/index.md)
     - Deployment Models
       * [Deployment Models](ops/deployment/deployment-models/index.md)
     - Performance And Scalability
       * [Performance And Scalability](ops/deployment/performance-and-scalability/index.md)
-    - Requirements
-      * [Application Requirements](ops/deployment/requirements/index.md)
+    - Platform Requirements
+      * [Platform Requirements](ops/deployment/platform-requirements/index.md)
     - Vm Architecture
       * [Virtual Machine Architecture](ops/deployment/vm-architecture/index.md)
     * [Deployment](ops/deployment/_index.md)
@@ -511,8 +513,6 @@
       * [Oracle Cloud Infrastructure](setup/platform-setup/oci/index.md)
     - Openshift
       * [Open Shift](setup/platform-setup/openshift/index.md)
-    - Prerequisites
-      * [Platform Prerequisites](setup/platform-setup/prerequisites/index.md)
     - Tencent Cloud Mesh
       * [Tencent Cloud](setup/platform-setup/tencent-cloud-mesh/index.md)
     * [Platform Setup](setup/platform-setup/_index.md)
