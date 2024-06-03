@@ -12,7 +12,17 @@
       * [Ztunnel Traffic Redirection](ambient/architecture/traffic-redirection/index.md)
     * [Architecture](ambient/architecture/_index.md)
   - Getting Started
-    * [Getting Started](ambient/getting-started/index.md)
+    - Cleanup
+      * [Index](ambient/getting-started/cleanup/index.md)
+    - Deploy Sample App
+      * [Deploy The Application](ambient/getting-started/deploy-sample-app/index.md)
+    - Enforce Auth Policies
+      * [Enforce Authorization Policies](ambient/getting-started/enforce-auth-policies/index.md)
+    - Manage Traffic
+      * [Manage Traffic](ambient/getting-started/manage-traffic/index.md)
+    - Secure And Visualize
+      * [Secure And Visualize The Application](ambient/getting-started/secure-and-visualize/index.md)
+    * [Getting Started](ambient/getting-started/_index.md)
   - Install
     - Helm Installation
       * [Install With Helm](ambient/install/helm-installation/index.md)
