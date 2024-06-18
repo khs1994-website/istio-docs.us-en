@@ -171,6 +171,8 @@
     - Application Requirements
       * [Application Requirements](ops/deployment/application-requirements/index.md)
     - Architecture
+      - Cni
+        * [CNI Plugin](ops/deployment/architecture/cni/index.md)
       * [Architecture](ops/deployment/architecture/index.md)
     - Deployment Models
       * [Deployment Models](ops/deployment/deployment-models/index.md)
@@ -224,6 +226,14 @@
       * [Zipkin](ops/integrations/zipkin/index.md)
     * [Integrations](ops/integrations/_index.md)
   * [Operations](ops/_index.md)
+- Overview
+  - Dataplane Modes
+    * [Sidecar Or Ambient](overview/dataplane-modes/index.md)
+  - What Is Istio
+    * [What Is Istio](overview/what-is-istio/index.md)
+  - Why Choose Istio
+    * [Why Choose Istio](overview/why-choose-istio/index.md)
+  * [Overview](overview/_index.md)
 - Reference
   - Commands
     * [Commands](reference/commands/_index.md)
@@ -351,6 +361,7 @@
     * [Data Plane](reference/glossary/data-plane.md)
     * [Data Plane Mode](reference/glossary/dataplane-mode.md)
     * [Destination](reference/glossary/destination.md)
+    * [E BPF](reference/glossary/eBPF.md)
     * [Envoy](reference/glossary/envoy.md)
     * [External Control Plane](reference/glossary/external-control-plane.md)
     * [Failure Domain](reference/glossary/failure-domain.md)
