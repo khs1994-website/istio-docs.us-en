@@ -13,7 +13,7 @@
     * [Architecture](ambient/architecture/_index.md)
   - Getting Started
     - Cleanup
-      * [Index](ambient/getting-started/cleanup/index.md)
+      * [Cleanup](ambient/getting-started/cleanup/index.md)
     - Deploy Sample App
       * [Deploy The Application](ambient/getting-started/deploy-sample-app/index.md)
     - Enforce Auth Policies
