@@ -454,7 +454,7 @@
 - Setup
   - Additional Setup
     - Cni
-      * [Install Istio With The Istio CNI Plugin](setup/additional-setup/cni/index.md)
+      * [Install The Istio CNI Node Agent](setup/additional-setup/cni/index.md)
     - Compatibility Versions
       * [Compatibility Versions](setup/additional-setup/compatibility-versions/index.md)
     - Config Profiles
