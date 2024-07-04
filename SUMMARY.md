@@ -337,8 +337,6 @@
     - Networking
       * [Traffic Management](reference/config/networking/_index.md)
     - Proxy Extensions
-      - Wasm Telemetry
-        * [Wasm Based Telemetry](reference/config/proxy_extensions/wasm_telemetry/index.md)
       * [Proxy Extensions](reference/config/proxy_extensions/_index.md)
     - Security
       - Conditions
