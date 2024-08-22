@@ -24,16 +24,18 @@
       * [Secure And Visualize The Application](ambient/getting-started/secure-and-visualize/index.md)
     * [Getting Started](ambient/getting-started/_index.md)
   - Install
-    - Helm Installation
-      * [Install With Helm](ambient/install/helm-installation/index.md)
+    - Helm
+      * [Install With Helm](ambient/install/helm/index.md)
+    - Istioctl
+      * [Install With Istioctl](ambient/install/istioctl/index.md)
     - Platform Prerequisites
       * [Platform Specific Prerequisites](ambient/install/platform-prerequisites/index.md)
     * [Install](ambient/install/_index.md)
   - Overview
     * [Overview](ambient/overview/index.md)
   - Upgrade
-    - Helm Upgrade
-      * [Upgrade With Helm](ambient/upgrade/helm-upgrade/index.md)
+    - Helm
+      * [Upgrade With Helm](ambient/upgrade/helm/index.md)
     * [Upgrade](ambient/upgrade/_index.md)
   - Usage
     - Add Workloads
@@ -48,6 +50,8 @@
       * [Troubleshoot Issues With Waypoints](ambient/usage/troubleshoot-waypoint/index.md)
     - Troubleshoot Ztunnel
       * [Troubleshoot Connectivity Issues With Ztunnel](ambient/usage/troubleshoot-ztunnel/index.md)
+    - Verify Mtls Enabled
+      * [Verify Mutual TLS Is Enabled](ambient/usage/verify-mtls-enabled/index.md)
     - Waypoint
       * [Configure Waypoint Proxies](ambient/usage/waypoint/index.md)
     * [User Guides](ambient/usage/_index.md)
