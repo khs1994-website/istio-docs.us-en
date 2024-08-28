@@ -46,6 +46,8 @@
       * [Use Layer 4 Security Policy](ambient/usage/l4-policy/index.md)
     - L 7 Features
       * [Use Layer 7 Features](ambient/usage/l7-features/index.md)
+    - Networkpolicy
+      * [Ambient And Kubernetes Network Policy](ambient/usage/networkpolicy/index.md)
     - Troubleshoot Waypoint
       * [Troubleshoot Issues With Waypoints](ambient/usage/troubleshoot-waypoint/index.md)
     - Troubleshoot Ztunnel
