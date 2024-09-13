@@ -503,8 +503,6 @@
       * [Install Multicluster](setup/install/multicluster/_index.md)
     - Multiple Controlplanes
       * [Install Multiple Istio Control Planes In A Single Cluster](setup/install/multiple-controlplanes/index.md)
-    - Operator
-      * [Istio Operator Install](setup/install/operator/index.md)
     - Virtual Machine
       * [Virtual Machine Installation](setup/install/virtual-machine/index.md)
     * [Installation Guides](setup/install/_index.md)
