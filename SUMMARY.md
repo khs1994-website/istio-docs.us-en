@@ -184,6 +184,8 @@
       * [Performance And Scalability](ops/deployment/performance-and-scalability/index.md)
     - Platform Requirements
       * [Platform Requirements](ops/deployment/platform-requirements/index.md)
+    - Security Model
+      * [Security Model](ops/deployment/security-model/index.md)
     - Vm Architecture
       * [Virtual Machine Architecture](ops/deployment/vm-architecture/index.md)
     * [Deployment](ops/deployment/_index.md)
