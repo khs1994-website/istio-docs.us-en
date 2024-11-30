@@ -13,9 +13,9 @@
     * [Architecture](ambient/architecture/_index.md)
   - Getting Started
     - Cleanup
-      * [Cleanup](ambient/getting-started/cleanup/index.md)
+      * [Clean Up](ambient/getting-started/cleanup/index.md)
     - Deploy Sample App
-      * [Deploy The Application](ambient/getting-started/deploy-sample-app/index.md)
+      * [Deploy A Sample Application](ambient/getting-started/deploy-sample-app/index.md)
     - Enforce Auth Policies
       * [Enforce Authorization Policies](ambient/getting-started/enforce-auth-policies/index.md)
     - Manage Traffic
