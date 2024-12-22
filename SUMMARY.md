@@ -25,6 +25,8 @@
     * [Getting Started](ambient/getting-started/_index.md)
   - Install
     - Helm
+      - All In One
+        * [Install With Helm Simple](ambient/install/helm/all-in-one/index.md)
       * [Install With Helm](ambient/install/helm/index.md)
     - Istioctl
       * [Install With Istioctl](ambient/install/istioctl/index.md)
@@ -35,6 +37,8 @@
     * [Overview](ambient/overview/index.md)
   - Upgrade
     - Helm
+      - All In One
+        * [Upgrade With Helm Simple](ambient/upgrade/helm/all-in-one/index.md)
       * [Upgrade With Helm](ambient/upgrade/helm/index.md)
     * [Upgrade](ambient/upgrade/_index.md)
   - Usage
