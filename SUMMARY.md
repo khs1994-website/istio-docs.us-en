@@ -239,6 +239,8 @@
 - Overview
   - Dataplane Modes
     * [Sidecar Or Ambient](overview/dataplane-modes/index.md)
+  - Quickstart
+    * [Quickstart](overview/quickstart/index.md)
   - What Is Istio
     * [What Is Istio](overview/what-is-istio/index.md)
   - Why Choose Istio
