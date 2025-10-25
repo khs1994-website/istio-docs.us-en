@@ -184,6 +184,8 @@
       * [Traffic Management](ops/configuration/traffic-management/_index.md)
     * [Configuration](ops/configuration/_index.md)
   - Deployment
+    - Ambient Mc Perf
+      * [Ambient Multicluster Performance](ops/deployment/ambient-mc-perf/index.md)
     - Application Requirements
       * [Application Requirements](ops/deployment/application-requirements/index.md)
     - Architecture
