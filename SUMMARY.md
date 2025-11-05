@@ -33,6 +33,8 @@
     - Multicluster
       - Before You Begin
         * [Before You Begin](ambient/install/multicluster/before-you-begin/index.md)
+      - Failover
+        * [Configure Failover Behavior In Multicluster Ambient Installation](ambient/install/multicluster/failover/index.md)
       - Multi Primary Multi Network
         * [Install Ambient Multi Primary On Different Networks](ambient/install/multicluster/multi-primary_multi-network/index.md)
       - Verify
