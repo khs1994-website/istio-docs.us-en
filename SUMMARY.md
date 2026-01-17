@@ -611,6 +611,8 @@
         * [Customizing Istio Metrics](tasks/observability/metrics/customize-metrics/index.md)
       - Querying Metrics
         * [Querying Metrics From Prometheus](tasks/observability/metrics/querying-metrics/index.md)
+      - Secure Metrics
+        * [Securing Prometheus Scraping For Istio Sidecar And Gateway](tasks/observability/metrics/secure-metrics/index.md)
       - Tcp Metrics
         * [Collecting Metrics For TCP Services](tasks/observability/metrics/tcp-metrics/index.md)
       - Telemetry Api
