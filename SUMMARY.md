@@ -691,6 +691,8 @@
     - Ingress
       - Gateway Api
         * [Kubernetes Gateway API](tasks/traffic-management/ingress/gateway-api/index.md)
+      - Gateway Api Inference Extension
+        * [Kubernetes Gateway API Inference Extension](tasks/traffic-management/ingress/gateway-api-inference-extension/index.md)
       - Ingress Control
         * [Ingress Gateways](tasks/traffic-management/ingress/ingress-control/index.md)
       - Ingress Sidecar Tls Termination
