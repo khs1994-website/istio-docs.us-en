@@ -37,6 +37,8 @@
         * [Configure Failover Behavior In Multicluster Ambient Installation](ambient/install/multicluster/failover/index.md)
       - Multi Primary Multi Network
         * [Install Ambient Multi Primary On Different Networks](ambient/install/multicluster/multi-primary_multi-network/index.md)
+      - Observability
+        * [Kiali Dashboard For Ambient Multi Network](ambient/install/multicluster/observability/index.md)
       - Verify
         * [Verify The Ambient Installation](ambient/install/multicluster/verify/index.md)
       * [Install Multicluster](ambient/install/multicluster/_index.md)
