@@ -234,6 +234,10 @@
       * [Cert Manager](ops/integrations/certmanager/index.md)
     - Grafana
       * [Grafana](ops/integrations/grafana/index.md)
+    - Integration Guide
+      - Debug Endpoints
+        * [Debug Endpoints](ops/integrations/integration-guide/debug-endpoints/index.md)
+      * [Integration Guide](ops/integrations/integration-guide/_index.md)
     - Jaeger
       * [Jaeger](ops/integrations/jaeger/index.md)
     - Kiali
