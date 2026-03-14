@@ -64,6 +64,8 @@
       * [Use Layer 7 Features](ambient/usage/l7-features/index.md)
     - Networkpolicy
       * [Ambient And Kubernetes Network Policy](ambient/usage/networkpolicy/index.md)
+    - Traffic Distribution
+      * [Traffic Distribution](ambient/usage/traffic-distribution/index.md)
     - Troubleshoot Waypoint
       * [Troubleshoot Issues With Waypoints](ambient/usage/troubleshoot-waypoint/index.md)
     - Troubleshoot Ztunnel
