@@ -362,8 +362,6 @@
       - Message Format
         * [Analyzer Message Format](reference/config/analysis/message-format/index.md)
       * [Configuration Analysis Messages](reference/config/analysis/_index.md)
-    - Config Status
-      * [Configuration Status Field](reference/config/config-status/index.md)
     - Metrics
       * [Istio Standard Metrics](reference/config/metrics/index.md)
     - Networking
