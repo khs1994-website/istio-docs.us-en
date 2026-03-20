@@ -499,6 +499,8 @@
       * [Installing Gateways](setup/additional-setup/gateway/index.md)
     - Getting Started Istio Apis
       * [Getting Started Without The Gateway API](setup/additional-setup/getting-started-istio-apis/index.md)
+    - Network Policy
+      * [Network Policy](setup/additional-setup/network-policy/index.md)
     - Pod Security Admission
       * [Install Istio With Pod Security Admission](setup/additional-setup/pod-security-admission/index.md)
     - Sidecar Injection
