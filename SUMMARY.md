@@ -56,6 +56,8 @@
   - Usage
     - Add Workloads
       * [Add Workloads To The Mesh](ambient/usage/add-workloads/index.md)
+    - Extend Waypoint Lua
+      * [Extend Waypoints With Lua Scripts](ambient/usage/extend-waypoint-lua/index.md)
     - Extend Waypoint Wasm
       * [Extend Waypoints With Web Assembly Plugins](ambient/usage/extend-waypoint-wasm/index.md)
     - L 4 Policy
@@ -77,14 +79,14 @@
     * [User Guides](ambient/usage/_index.md)
   * [Ambient Mode](ambient/_index.md)
 - Concepts
+  - Extensibility
+    * [Extensibility](concepts/extensibility/trafficextension.md)
   - Observability
     * [Observability](concepts/observability/index.md)
   - Security
     * [Security](concepts/security/index.md)
   - Traffic Management
     * [Traffic Management](concepts/traffic-management/index.md)
-  - Wasm
-    * [Extensibility](concepts/wasm/index.md)
   * [Concepts](concepts/_index.md)
 - Examples
   - Bookinfo
@@ -578,8 +580,10 @@
   * [Sidecar Mode](setup/_index.md)
 - Tasks
   - Extensibility
-    - Wasm Module Distribution
-      * [Distributing Web Assembly Modules](tasks/extensibility/wasm-module-distribution/index.md)
+    - Lua Scripts
+      * [Executing Lua Scripts](tasks/extensibility/lua-scripts/index.md)
+    - Wasm Modules
+      * [Executing Web Assembly Modules](tasks/extensibility/wasm-modules/index.md)
     * [Extensibility](tasks/extensibility/_index.md)
   - Observability
     - Distributed Tracing
