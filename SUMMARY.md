@@ -45,6 +45,16 @@
     - Platform Prerequisites
       * [Platform Specific Prerequisites](ambient/install/platform-prerequisites/index.md)
     * [Install](ambient/install/_index.md)
+  - Migrate
+    - Before You Begin
+      * [Before You Begin](ambient/migrate/before-you-begin/index.md)
+    - Enable Ambient Mode
+      * [Enable Ambient Mode](ambient/migrate/enable-ambient-mode/index.md)
+    - Install Ambient Components
+      * [Install Ambient Components](ambient/migrate/install-ambient-components/index.md)
+    - Migrate Policies
+      * [Migrate Policies](ambient/migrate/migrate-policies/index.md)
+    * [Migrate From Sidecar To Ambient](ambient/migrate/_index.md)
   - Overview
     * [Overview](ambient/overview/index.md)
   - Upgrade
