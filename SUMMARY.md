@@ -90,7 +90,7 @@
   * [Ambient Mode](ambient/_index.md)
 - Concepts
   - Extensibility
-    * [Extensibility](concepts/extensibility/trafficextension.md)
+    * [Extensibility](concepts/extensibility/index.md)
   - Observability
     * [Observability](concepts/observability/index.md)
   - Security
