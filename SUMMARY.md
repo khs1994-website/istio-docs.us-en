@@ -76,6 +76,8 @@
       * [Use Layer 7 Features](ambient/usage/l7-features/index.md)
     - Networkpolicy
       * [Ambient And Kubernetes Network Policy](ambient/usage/networkpolicy/index.md)
+    - Serviceentry Visibility
+      * [Service Entry Visibility](ambient/usage/serviceentry-visibility/index.md)
     - Traffic Distribution
       * [Traffic Distribution](ambient/usage/traffic-distribution/index.md)
     - Troubleshoot Waypoint
