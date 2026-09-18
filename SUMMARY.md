@@ -68,6 +68,8 @@
       * [Add Workloads To The Mesh](ambient/usage/add-workloads/index.md)
     - Agentgateway
       * [Use Agentgateway](ambient/usage/agentgateway/index.md)
+    - Egress Gateway
+      * [Egress Gateways](ambient/usage/egress-gateway/index.md)
     - Extend Waypoint Lua
       * [Extend Waypoints With Lua Scripts](ambient/usage/extend-waypoint-lua/index.md)
     - Extend Waypoint Wasm
