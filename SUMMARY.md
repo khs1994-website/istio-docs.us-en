@@ -193,6 +193,8 @@
         * [Understanding DNS](ops/configuration/traffic-management/dns/index.md)
       - Dns Proxy
         * [DNS Proxying](ops/configuration/traffic-management/dns-proxy/index.md)
+      - Edge Proxy
+        * [Edge Proxy Configuration](ops/configuration/traffic-management/edge-proxy/index.md)
       - Manage Mesh Certificates
         * [Managing In Mesh Certificates](ops/configuration/traffic-management/manage-mesh-certificates/index.md)
       - Multicluster
